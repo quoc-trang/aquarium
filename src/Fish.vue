@@ -164,6 +164,7 @@ const size = computed(() => {
     </div>
 
     <button
+      v-if="isHungry"
       @click="feedFish"
       style="transform: translateX(-50%)"
       class="speech-bubble"
