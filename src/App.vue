@@ -6,7 +6,7 @@ import Aquarium from "./Aquarium.vue";
 const allFish = ref([]);
 
 const remove = (fish) => {
-  allFish.value = allFish.value.filter((f) => f.name !== fish.name);
+  allFish.value = allFish.value.filter((f) => f.id !== fish.id);
 };
 </script>
 

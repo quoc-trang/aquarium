@@ -109,7 +109,7 @@ setInterval(() => {
     isDead.value = true;
     setTimeout(() => {
       emit("remove");
-    }, 5_000);
+    }, 1_000);
   }
 }, 100);
 

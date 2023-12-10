@@ -18,7 +18,13 @@ const name = ref("");
 <template>
   <div>
     <form
-      @submit.prevent="$emit('add', { name, src: selectedFish })"
+      @submit.prevent="
+        $emit('add', {
+          name,
+          src: selectedFish,
+          id: Math.random().toString(36),
+        })
+      "
       class="flex flex-col gap-y-5 p-5"
     >
       <div class="grid grid-cols-2 gap-5">
